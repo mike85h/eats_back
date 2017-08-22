@@ -1,1 +1,6 @@
-node_modules
+#node stuff
+/node_modules
+/node_module
+
+# Mac stuff
+.DS_Store
