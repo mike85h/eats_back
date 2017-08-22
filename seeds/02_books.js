@@ -8,7 +8,7 @@ exports.seed = function(knex, Promise) {
           title: 'Python In A Nutshell',
           genre: 'Python',
           description: 'This book offers Python programmers one place to look when they need help remembering or deciphering the syntax of this open source language and its many powerful but scantily documented modules. This comprehensive reference guide makes it easy to look up the most frequently needed information--not just about the Python language itself, but also the most frequently used parts of the standard library and the most important third-party extensions.',
-          coverURL: ''
+          coverURL: 'https://s3-us-west-2.amazonaws.com/assessment-images/galvanize_reads/photos/python_in_a_nutshell.jpg'
         },
         {
           id: 2,
@@ -28,14 +28,14 @@ exports.seed = function(knex, Promise) {
           id: 4,
           title: 'You Don\'t Know JS: ES6 & Beyond',
           genre: 'JavaScript',
-          description: 'No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. As part of the "You Don’t Know JS" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the standard upon which JavaScript is built.',
+          description: 'No matter how much experience you have with JavaScript, odds are you don\’t fully understand the language. As part of the "You Don\’t Know JS" series, this compact guide focuses on new features available in ECMAScript 6 (ES6), the latest version of the standard upon which JavaScript is built.',
           coverURL: 'https://s3-us-west-2.amazonaws.com/assessment-images/galvanize_reads/photos/es6_and_beyond.jpg'
         },
         {
           id: 5,
           title: 'You Don\'t Know JS: Scope & Closures',
           genre: 'JavaScript',
-          description: 'No matter how much experience you have with JavaScript, odds are you don’t fully understand the language. This concise yet in-depth guide takes you inside scope and closures, two core concepts you need to know to become a more efficient and effective JavaScript programmer. You’ll learn how and why they work, and how an understanding of closures can be a powerful part of your development skillset.',
+          description: 'No matter how much experience you have with JavaScript, odds are you don\’t fully understand the language. This concise yet in-depth guide takes you inside scope and closures, two core concepts you need to know to become a more efficient and effective JavaScript programmer. You\’ll learn how and why they work, and how an understanding of closures can be a powerful part of your development skillset.',
           coverURL: 'https://s3-us-west-2.amazonaws.com/assessment-images/galvanize_reads/photos/scope_and_closures.jpg'
         },
         {
