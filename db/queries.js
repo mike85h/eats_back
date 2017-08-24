@@ -1,15 +1,24 @@
-var knex = require('./knex')
+const knex = require('./knex')
 
 module.exports = {
-  // getUsers: function() {
-  //   return knex('users').select()
-  // },
-  // getUserById: function(id) {
-  //   return knex('users').select().where('id', id)
-  // },
-  // getSecretsByUserId: function(id) {
-  //   return knex('secrets')
-  //     .select('id', 'secret')
-  //     .where('user_id', id)
-  // }
+  getBooks: function() {
+    return knex('book').select('*')
+  },
+  getBooksById: function(id) {
+    return knex('book').select().where('id', id)
+  },
+  deleteBooksById: function(id) {
+    return knex('book').delete().where('id',id)
+  },
+  getSAuthorsById: function(id) {
+    return knex('secrets')
+      .select('id', 'secret')
+      .where('user_id', id)
+  },
+  getAuthorsByBookId: function(book_id){
+    return knex('book').select('author.*')
+      .join('book_author', 'book.id', 'book_author.book_id')
+      .join('author', 'author.id', 'book_author.author.id')
+      .where('book.id', 'book_id')
+  }
 }
